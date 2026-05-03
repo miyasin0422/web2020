@@ -1,0 +1,235 @@
+@font-face {/*Mgenフォント指定*/
+    font-family: "Mgen";
+    src: url("mgenplus-2p-bold.ttf");
+}
+
+body {
+    text-align: center;
+    background-image: url(images/background/b036.gif);/*全体の背景*/
+    font-size: 25px;
+    margin: 0px;/*全体の余白消し*/
+    padding: 0px;/*全体の余白消し*/
+}
+
+ul {
+    list-style: none;/*リスト点消し*/
+}
+/*span用クラス*/
+.large{/*大見出し*/
+    background-color:cornsilk;
+    font-size: 65px;
+    color: blue;
+    border-style: double;/*2本の枠線*/
+    padding: 10px;
+    font-weight: bold;
+}
+
+.small {/*小見出し*/
+    background-color:antiquewhite;
+    font-size: 40px;
+    color: red;
+    height: auto;
+}
+
+.strong{/*赤字で強調*/
+    color: red;
+}
+
+.bg{
+    background-color: antiquewhite;
+}
+
+.br-phone{/*モバイル用改行*/
+    display: none;
+}
+
+.logo {/*弱電ロゴ*/
+    margin-top: 10px;
+    max-width: 30%;
+}
+
+.home_header {/*indexのヘッダー*/
+    text-align: center;/*ボックスの中央に配置*/
+    background-image: url(images/desktop.jpg);
+    background-repeat: no-repeat;/*背景画像を繰り返さない*/
+    background-size: cover;
+    min-height: 95vh;
+}
+
+.header{/*index以外のヘッダー*/
+    text-align: center;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.main {/*内容*/
+    float: left;/*全体の左寄せ*/
+    text-align: center;
+    width: 70%;
+    height: auto;
+}
+
+.menu {/*メニューバー*/
+    text-align: center;
+    background-color: white;
+    float: right;
+    position:sticky;/*スクロールに応じて位置を指定*/
+    top:10vh;
+    width: 30%;
+    height: auto;
+}
+
+.info{/*googlemapとtwitter*/
+    display: flex;/*flex使うときの宣言*/
+    flex-wrap: nowrap;/*横一列に並べる*/
+    clear: both;/*floatを無効化　被らなくなる*/
+    text-align: center;
+    margin-bottom: 150px;
+    width: 70%;
+}
+
+.googlemap{
+    padding:25px;
+    width: 600px;
+    height: 450px;
+}
+
+.twitter{
+    padding:25px;
+    width: 300px;
+    height: 450px;
+}
+
+footer {/*下の部分*/
+    text-align: center;
+    background-color: #023d53;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    clear: both;
+}
+
+.pagetop {/*"上に戻る"やつ*/
+    color: azure;
+    font-size: 25px;
+}
+
+.soft_manege{/*ソフトの分類別*/
+    display: flex;
+    flex-wrap: wrap;/*折り返して上から下に並べる*/
+    height: auto;
+}
+
+.soft{/*1つのソフト*/
+    background-color: white;
+    margin: 5px;
+    height: 250px;
+    width: 250px;
+    border-style: solid;/*１本の枠線*/
+}
+
+.game{/*ゲーム用説明のクラス*/
+    text-align: left;/*ボックスの左に配置*/
+    display:flex;
+    flex-wrap: nowrap;
+    height: auto;
+}
+
+.movie{/*動画用クラス*/
+    margin: 0 15%;
+    width: 70%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+/* モバイル版 */
+@media (max-width: 750px) {/*750px以下の画面*/
+    
+    body {
+        font-size: 18px;
+    }
+    
+    .large{/*大見出し*/
+        font-size: 40px;
+        padding: 0px 5px;
+    }
+    
+    .small {/*小見出し*/
+        font-size: 30px;
+    }
+    
+    .br-phone{/*モバイル用改行*/
+        display: block;
+    }
+    
+    .logo {/*弱電ロゴ*/
+        max-width: 45%;
+    }
+    
+        
+    .home_header {/*indexのヘッダー*/
+        min-height: 50vh;
+    }
+    
+    .header{/*index以外のヘッダー*/
+        margin-bottom: 20px;
+    }
+
+    .main {/*内容*/
+        margin: 15px 0px;
+        width: 100%;
+    }
+    
+    .menu {/*メニューバー*/
+        float:left;
+        position:static;/*通常の位置*/
+        width: 100%;
+    }
+    
+    .info{/*googlemapとtwitter*/
+        flex-wrap: wrap;
+        clear: both;
+        text-align: center;
+        margin-bottom: 80px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .googlemap , .twitter{
+        width: 100%;
+        padding-top: 60px;
+    }
+    
+    footer {/*下の部分*/
+        height: 50px;
+    }
+    
+    .pagetop {/*"ページトップへ"のやつ*/
+        font-size: 15px;
+    }
+    
+    .soft_manege{/*ソフトの分類別*/
+        width: 100%;
+    }
+    
+    .soft{/*1つのソフト*/
+        height: 45%;
+        width: 45%;
+    }
+
+    .game{/*ゲーム用説明のクラス*/
+        text-align: center;
+        float: none;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .movie{/*動画用クラス*/
+        margin: 0;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 50px;
+    }
+}
+

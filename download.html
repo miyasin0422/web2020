@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8"><!--文字コード指定-->
+    <title>東邦高校弱電部ホームページ</title>
+    <meta name="description" content="東邦高校弱電部ホームページ">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--モバイル対応-->
+    <link rel="stylesheet" href="jakuden.css"><!--cssファイル適用-->
+    <!--アイコン ファビコン設定-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+    <link rel="manifest" href="images/icon/site.webmanifest">
+    <link rel="mask-icon" href="images/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--ここまでアイコン ファビコン設定-->
+    
+    <!--javascript-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script><!--javascript対応-->
+    <script>
+        $(function() {
+            $('a[href^=#]').click(function() {
+                var speed = 400;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            }); });
+    </script>
+    <style>
+        div {
+            width: auto;
+            height: auto;
+        }
+        a.button {
+            font-size: 12px;
+        }
+    </style>
+    <!--ここまでjavascrript-->
+    
+</head>
+
+<body>
+    <div class="header">
+        <div><a href="index.html"><img class="logo" src="images/jakuden_logo.png" alt=""></a><br>
+            <span class="large">ダウンロード</span>
+        </div>
+    </div>
+
+    <div class="menu"><!--コピペで増やせるよ-->
+        <table border="9" style="width: 100%;"><!--表を作るタグ-->
+            
+            <tr><th style="font-size:25px;">メニュー</th></tr><!--"tr"は横一列を囲む  "th"は題名  "td"は中身-->
+            <tr><td style="font-size:25px;"><a href="index.html">トップページ</a></td></tr>
+            <tr><td style="font-size:25px;"><a href="game.html">今年のゲーム</a></td></tr>
+            <tr><td style="font-size:25px;"><a href="soft.html">使用ソフト</a></td></tr>
+            <tr><td style="font-size:25px;"><a href="download.html">ダウンロード</a></td></tr>
+            
+            <tr><th style="font-size:25px;">リンク</th></tr>
+            <tr><td style="font-size:25px;"><a href="https://www.tohojh.toho-u.ac.jp/" target="_blank">東邦高校ホームページ</a></td></tr>
+            <tr><td style="font-size:25px;"><a href="https://mobile.twitter.com/tohowec" target="_blank">弱電部Twitter</a></td></tr>
+            <tr><td style="font-size:25px;"><a href="https://www.youtube.com/channel/UC7LW4WZ9XWVDe6qhqBtpCJg/featured" target="_blank">Youtubeチャンネル</a></td></tr>
+        </table>
+    </div>
+
+    <div class="main" style="margin: 10px 0px;">
+        <!--2020年用-->
+        <div class="bg"><span class="small">2020年ゲーム</span></div>
+        2020年は新作ゲームが少ないので、<br>
+        ランチャーで配布するのではなく、<br class="br-phone">1つ1つのゲームを個別に<br class="br-phone">ダウンロードする形で配布します。
+
+        <table border="5" style="width: 100%;">
+            <tr><td>Tank　Survival2　<a href="zip/Tank%20Survival2.zip"><span class="strong">download</span></a></td></tr>
+            <tr><td>Space　Guardians　<a href="zip/Space%20Guardians.zip"><span class="strong">download</span></a></td></tr>
+            <tr><td>じゃんけんゲーム　<a href="zip/janken.zip"><span class="strong">download</span></a></td></tr>
+        </table><br>
+        
+        
+        <!--pc game-->
+        <div class="bg"><span class="small">PC用ゲーム</span></div>
+        <h3 style="color: crimson">注意事項</h3>
+        弱電部では[ <span class="strong">Windows10 Home 64bit</span> ]でのみ<br class="br-phone">動作確認を行っています。<br>
+        Windows以外は基本的に<br class="br-phone">対応しておりません。<br>
+        ダウンロードは<span class="strong">ZIP形式</span>で行われます。<br class="br-phone">解凍してご利用ください。<br>
+        (おすすめの解凍ソフトは<a href="https://sevenzip.osdn.jp/" target="_blank">7-Zip</a>です)<br>
+        解凍したファイルの中に[<span class="strong">Readme.txt</span>]という<br class="br-phone">ファイルが同梱してあります。<br>
+        そのファイルを読んでから<br class="br-phone">起動してください。<br>
+        ランチャーはJavaで制作している<br class="br-phone">場合もあるため、<br>
+        ランチャーが起動しない場合は<span class="strong"><br class="br-phone">Javaのインストール</span>を行ってください。<br>
+        それでもなにかわからないことが<br class="br-phone">ありましたら、<br>
+        <a href="https://www.twitter.com/TohoWEC" target="_blank"><b>Twitter</b></a>のDMを開放しているので<br class="br-phone">送ってください。
+        
+        <table border="5" style="width: 100%;"><!--コピペで増やせるよ-->
+            <tr><th><span class="small">　最新版ランチャー　</span></th></tr>
+            <tr><td>2019年版　<a href="zip/2019.zip"><span class="strong">download</span></a></td></tr>
+            <tr><th><span class="small">　すべてのランチャー　</span></th></tr>
+            <tr><td>2019年版　<a href="zip/2019.zip"><span class="strong">download</span></a></td></tr>
+            <tr><td>2018年版　<a href="zip/2018.zip"><span class="strong">download</span></a></td></tr>
+            <tr><td>2017年版　<a href="zip/2017.zip"><span class="strong">download</span></a></td></tr>
+            <tr><td>2016年版　<a href="zip/2016.zip"><span class="strong">download</span></a></td></tr>
+            <tr><td>2015年版　<a href="zip/2015.zip"><span class="strong">download</span></a></td></tr>
+        </table><br>
+
+        <!--android game-->
+        <div class="bg"><span class="small">Android用ゲーム</span></div>
+        <h3 style="color: crimson">注意事項</h3>
+        下のファイルは<br class="br-phone">Android用".apk"ファイルです。<br>
+        APKファイルのインストールについては<br class="br-phone">機種等によって違う可能性があるので、<br>
+        <span class="strong">自己責任</span>で行ってください.<br>
+        (※iOS版はMac環境が無いので<br class="br-phone">作成できません)<br>
+
+        <table border="5" style="width: 100%;">
+            <tr><td>素因数分解パズル(2019)　<a href="apk/Factoring.apk"><span class="strong">download</span></a>(factoring.apk)</td></tr>
+            <tr><td>じゃんけんゲーム(2020)　<a href="apk/janken.apk"><span class="strong">download</span></a>(janken.apk)</td></tr>
+        </table>
+    </div>
+    
+
+    <footer>
+        <div id="sec1"><!--上までスクロールするやつ 「id=sec数字」で使える-->
+            <a class="button" href="#index"><span class="pagetop">上に戻る</span></a>
+        </div>
+    </footer>
+
+</body></html>
